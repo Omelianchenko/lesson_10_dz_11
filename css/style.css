@@ -50,30 +50,25 @@ a {
 .nav1 li:hover a {
     border-bottom: 1px solid #000000;
 }
-.send {
+.send a {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.5);
-    transition: background-color 0.75s ease;
-}
-.nav2 li {
     padding: 6.5px 36.5px;
     margin-left: 10px;
     margin-bottom: 10px;
-}
-.send a {
+    display: inline-block;
+    width: 100%;
     text-decoration: none;
     font-weight: 600;
     font-size: 16px;
-    transition: color 0.75s ease;
+    transition: all 0.75s ease;
 }
-li.try_free {
+.try_free a {
     padding: 6.5px 24px;
 }
-.send:hover {
+.send a:hover {
     background-color: #FF6336;
-}
-.send:hover a {
-    color: #FFFFFF;  
+    color: #FFFFFF; 
 }
 
 /* ------------section intro---------------- */
@@ -108,11 +103,10 @@ li.try_free {
     margin: 24px 0;
 }
 
-.intro_nav_item {
-    text-decoration: none;
-    width: 158px;
-    line-height: 57px;
-    margin-right: 10px;
+.intro_nav_item.send a {
+    line-height: 58px;
+    width: 160px;
+    padding: 0;
 }
 .intro_img {
     width: 52%;
@@ -218,7 +212,7 @@ li.try_free {
 
 .team_conteiner_outer {
     max-width: 100%;
-    padding: 154px 78px 75px 187px;
+    padding: 154px 78px 187px 75px;
 }
 .team_header {
     padding-bottom: 75px;
@@ -346,10 +340,11 @@ li.try_free {
     margin: 0 auto 162px auto;
     text-align: center;
 }
-.integration_link {
+.integration_link a {
     display: inline-block;
-    line-height: 60px;
+    line-height: 58px;
     padding: 0 20px;
+    width: 194px;
 }
 
 /* -------------------------section try ------------------*/
@@ -364,17 +359,20 @@ li.try_free {
     padding: 119px 0 29px 0;
     width: 55%;
 }
-.try_link {
-    margin: 54px 0 161px 0;
-    padding: 0 40px;
+.try_link a {
+    width: 160px;
+    line-height: 58px;
     display: inline-block;
+    padding: 0;
+    margin: 0;
     border: 1px solid black;
     transition: background-color 0.75s ease;
 }
-.try_link a {
-    line-height: 60px;
+.try_link {
+    display: inline-block;
+    margin: 54px 20px 161px;
 }
-.try_link:hover {
+.try_link a:hover {
     background-color: #000;
 }
 
